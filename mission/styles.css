@@ -2,54 +2,77 @@
 body {
   font-family: "Times New Roman", serif;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-color: #f4f4f4;
 }
 
-header {
+/* Center content inside a container */
+.container {
+  width: 80%; /* Adjust width to limit the content stretching */
+  max-width: 700px; /* Limit maximum width */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 40px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+/* Header section */
+header {
   margin-bottom: 20px;
 }
 
-/* Header styles */
 h1 {
   font-size: 36px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
   color: #006eb6;
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
 }
 
-/* Main content styles */
+/* Main content section */
 main {
-  max-width: 600px;
   text-align: left;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.8; /* Adjust line height */
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 ul {
   padding-left: 20px;
+  list-style-position: inside;
+  margin-bottom: 20px;
 }
 
-/* Footer styles */
+/* Footer section */
 footer {
-  margin-top: 20px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 footer img {
   width: 150px;
   height: auto;
+}
+
+/* Additional centering of the logo */
+footer {
+  text-align: center;
+  margin-top: 40px;
 }
