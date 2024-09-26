@@ -1,4 +1,3 @@
-/* General styles */
 body {
   font-family: "Times New Roman", serif;
   font-size: 20px;
@@ -14,9 +13,9 @@ body {
 
 /* Center content inside a container */
 .container {
-  width: 80%; /* Adjust width to limit the content stretching */
-  max-width: 700px; /* Limit maximum width */
-  margin: 0 auto; /* Center container horizontally */
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
   padding: 40px;
   background-color: white;
   border: 1px solid #ddd;
@@ -46,7 +45,7 @@ h2 {
 /* Main content section */
 main {
   text-align: left;
-  line-height: 1.8; /* Adjust line height */
+  line-height: 1.8;
 }
 
 p {
