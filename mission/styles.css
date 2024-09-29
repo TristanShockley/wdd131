@@ -1,3 +1,4 @@
+/* Light Theme (default) */
 body {
   font-family: "Times New Roman", serif;
   font-size: 20px;
@@ -9,6 +10,22 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #f4f4f4;
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+/* Adjust color for subtitle in dark theme for better contrast */
+.dark h2 {
+  color: #72bcd4;
+}
+
+.dark .container {
+  background-color: #444;
+  border-color: #555;
 }
 
 /* Center content inside a container */
