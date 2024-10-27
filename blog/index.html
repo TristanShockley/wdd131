@@ -10,29 +10,35 @@
     <meta name="author" content="Your Name" />
     <link rel="stylesheet" href="blog.css" />
     <script src="blog.js" defer></script>
-    <title>Book Review Blog</title>
+    <title>Kids Read For Fun</title>
   </head>
   <body>
     <header>
       <h1>Kids Read For Fun</h1>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Archive</a></li>
-          <li><a href="#">Search</a></li>
-        </ul>
+      <nav class="top-nav">
+        <a href="#">About</a>
+        <a href="#">Archive</a>
+        <a href="#">Search</a>
       </nav>
     </header>
 
     <main id="maincontent">
       <section id="book-reviews"></section>
       <aside>
-        <p>Filter form will go here</p>
+        <form id="filter-form">
+          <label for="age-range">Age Range:</label>
+          <select id="age-range">
+            <option value="all">All Ages</option>
+            <option value="10-14">10-14</option>
+            <option value="12-16">12-16</option>
+          </select>
+          <button type="button" onclick="applyFilter()">Filter</button>
+        </form>
       </aside>
     </main>
 
     <footer>
-      <p>&copy; 2024 Book Review Blog</p>
+      <p>&copy; 2024 Kids Read For Fun</p>
     </footer>
   </body>
 </html>
