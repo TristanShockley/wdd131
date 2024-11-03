@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.form-container {
+  width: 350px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+.main-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "front front"
+    "back back"
+    "button button";
+}
+
+.card-front,
+.card-back {
+  padding: 15px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.card-front {
+  grid-area: front;
+  display: grid;
+  gap: 10px;
+}
+
+.card-back {
+  grid-area: back;
+  display: grid;
+  gap: 10px;
+  background-color: #d3d3d3;
+  position: relative;
+}
+
+.card-number,
+.card-holder,
+.expiry-date,
+.cvv {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.dark-bar {
+  background-color: #333;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  grid-area: button;
+  padding: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
