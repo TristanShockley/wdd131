@@ -1,0 +1,142 @@
+:root {
+  --primary-color: #1b98e0;
+  --secondary-color: #59c3c3;
+  --text-dark: #333;
+  --text-light: #fff;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: "Amatic SC", cursive;
+}
+
+body {
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+header .logo {
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header h1 {
+  display: inline-block;
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 0.5rem;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-form button img {
+  width: 20px;
+  height: 20px;
+}
+
+.recipes {
+  max-width: 900px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.recipe {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: var(--text-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.recipe img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.recipe-content {
+  flex: 1;
+}
+
+.recipe-content h2 {
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin: 0 0 0.5rem;
+}
+
+.recipe-content p {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin: 0.5rem 0;
+}
+
+.rating {
+  font-size: 1.2rem;
+  color: gold;
+  margin: 0.5rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--text-light);
+  color: var(--text-dark);
+  font-size: 0.8rem;
+  border-top: 1px solid #ddd;
+}
+
+footer .social img {
+  height: 20px;
+  margin: 0 5px;
+}
+
+footer .attribution {
+  font-size: 0.6rem;
+  margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .recipes {
+    max-width: 800px;
+  }
+
+  .recipe {
+    flex-direction: row;
+  }
+}
