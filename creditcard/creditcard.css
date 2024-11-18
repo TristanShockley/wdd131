@@ -1,99 +1,129 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #ffb242;
+  font-family: lato, "helvetica-light";
+  position: relative;
+  text-transform: uppercase;
+  padding: 20px 0;
 }
 
-.form-container {
-  width: 350px;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Back Card Shadow */
+#card-back {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  background-color: #3d5266;
+  border-radius: 12px;
+  top: 30px;
+  left: 15px;
+  z-index: -1;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-form {
-  display: grid;
-  gap: 15px;
+/* Front Card */
+#card-front {
+  position: relative;
+  background-color: #498ee4;
+  width: 390px;
+  height: 250px;
+  border-radius: 12px;
+  padding: 20px 30px 0;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: white;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.main-grid {
-  display: grid;
-  gap: 10px;
-  grid-template-areas:
-    "front front"
-    "back back"
-    "button button";
-}
-
-.card-front,
-.card-back {
-  padding: 15px;
-  background-color: #e0e0e0;
-  border-radius: 8px;
-}
-
-.card-front {
-  grid-area: front;
-  display: grid;
-  gap: 10px;
-}
-
-.card-back {
-  grid-area: back;
-  display: grid;
-  gap: 10px;
-  background-color: #d3d3d3;
+#form-container {
+  margin: auto;
+  width: 500px;
+  height: 290px;
   position: relative;
 }
 
-.card-number,
-.card-holder,
-.expiry-date,
-.cvv {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Labels and Inputs */
 label {
-  font-size: 0.9rem;
-  color: #333;
+  display: block;
+  margin: 0 auto 7px;
 }
 
 input {
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
+  border: none;
+  outline: none;
+  background-color: #5a9def;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 0 0 25px;
+  color: white;
+  font-size: 10px;
+  box-sizing: border-box;
   border-radius: 4px;
+  font-family: lato, "helvetica-light", "sans-serif";
+  letter-spacing: 0.7px;
 }
 
-.total-amount {
+/* Placeholder Styling */
+input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #ffb242;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #e09c30;
+}
+
+.total {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-image {
+  float: right;
+  height: 40px;
+  margin-top: -10px;
+}
+
+.expiration-cvc {
   display: flex;
   justify-content: space-between;
-  font-weight: bold;
 }
 
-.dark-bar {
-  background-color: #333;
-  height: 8px;
-  border-radius: 4px;
+.expiration-cvc div {
+  flex: 1;
+  margin-right: 10px;
 }
 
-.submit-btn {
-  grid-area: button;
-  padding: 10px;
-  border: none;
-  background-color: #4caf50;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
+.expiration-cvc div:last-child {
+  margin-right: 0;
 }
