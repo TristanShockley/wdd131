@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A family book review site for parents and youth to find age-appropriate books."
+    />
+    <meta name="author" content="Your Name" />
+    <link rel="stylesheet" href="test.css" />
+    <script src="test.js" defer></script>
+    <title>Kids Read For Fun</title>
+  </head>
+  <body>
+    <header>
+      <h1>Kids Read For Fun</h1>
+      <nav class="top-nav">
+        <a href="#">About</a>
+        <a href="#">Archive</a>
+        <a href="#">Search</a>
+      </nav>
+    </header>
+
+    <main id="maincontent">
+      <section id="book-reviews"></section>
+      <aside>
+        <form id="filter-form">
+          <label for="age-range">Age Range:</label>
+          <select id="age-range">
+            <option value="all">All Ages</option>
+            <option value="10-14">10-14</option>
+            <option value="12-16">12-16</option>
+          </select>
+          <button type="button" onclick="applyFilter()">Filter</button>
+        </form>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Kids Read For Fun</p>
+    </footer>
+  </body>
+</html>
