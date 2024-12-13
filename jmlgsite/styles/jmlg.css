@@ -1,0 +1,304 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #396e94;
+  color: #ffffff;
+  padding: 2px;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content .logo {
+  height: 50px;
+}
+
+.header-content .main-site-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+main {
+  flex: 1; /* Makes the main section take up available space */
+  padding: 30px 10%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-section {
+  max-width: 1200px; /* Adjusted width */
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h2 {
+  font-size: 28px; /* Larger font size */
+  margin-bottom: 20px;
+  color: #396e94;
+}
+
+.welcome-section p {
+  font-size: 22px; /* Larger font size */
+  margin-bottom: 25px;
+}
+
+.welcome-section .main-logo {
+  width: 140px; /* Larger logo */
+  margin: 30px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Adjusted spacing */
+}
+
+.buttons button {
+  padding: 15px 30px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #396e94;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #2d5673;
+}
+
+/* Feedback Form Styling */
+.feedback-container {
+  max-width: 1400px; /* Wider form */
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 50px 70px; /* Adjusted padding for better spacing */
+  border-radius: 15px; /* Slightly more rounded corners */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.feedback-container h2 {
+  text-align: center;
+  color: #396e94;
+  font-size: 34px; /* Larger font size */
+  margin-bottom: 40px;
+}
+
+.feedback-container p {
+  text-align: center;
+  font-size: 18px; /* Larger font size */
+  margin-bottom: 30px;
+}
+
+.feedback-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.feedback-container input[type="number"],
+.feedback-container textarea {
+  width: 100%;
+  padding: 20px; /* Increased padding for better UX */
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.feedback-container textarea {
+  resize: vertical;
+}
+
+.radio-group {
+  margin: 25px 0;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+.radio-group label {
+  margin-right: 20px;
+}
+
+.feedback-container button {
+  display: block;
+  width: 100%;
+  padding: 18px; /* Increased padding for better spacing */
+  background-color: #396e94;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.feedback-container button:hover {
+  background-color: #2d5673;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #396e94;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+}
+
+/* Table Styling for Summary */
+.summary-container {
+  max-width: 1400px; /* Wider summary section */
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 50px 70px; /* Adjusted padding */
+  border-radius: 15px; /* Slightly more rounded corners */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.summary-container h2 {
+  text-align: center;
+  color: #396e94;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.summary-data p {
+  font-size: 22px;
+  margin: 20px 0;
+  color: #333;
+  text-align: center;
+}
+
+.summary-data span {
+  font-weight: bold;
+  color: #396e94;
+}
+
+/* Thank You Message */
+.hidden {
+  display: none;
+}
+
+#thank-you-message {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#thank-you-message h2 {
+  color: #396e94;
+  margin-bottom: 10px;
+}
+
+.feedback-container {
+  max-width: 900px; /* Adjusted to match the centered format */
+  margin: 50px auto; /* Centered with additional spacing */
+  background-color: #ffffff;
+  padding: 50px; /* Increased padding for a balanced look */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center-align the content */
+}
+
+.feedback-container h2 {
+  font-size: 36px; /* Increased size for title */
+  color: #396e94;
+  margin-bottom: 25px;
+}
+
+.feedback-container p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+.feedback-container label {
+  display: block;
+  font-size: 16px; /* Increased size */
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left; /* Align labels to the left */
+}
+
+.feedback-container input[type="number"],
+.feedback-container textarea {
+  width: 100%;
+  font-size: 16px; /* Adjusted for uniformity */
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback-container button {
+  font-size: 18px;
+  padding: 15px 30px;
+  background-color: #396e94;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%; /* Full-width button */
+}
+
+.feedback-container button:hover {
+  background-color: #2d5673;
+}
+
+.hidden {
+  display: none;
+}
+
+#thank-you-message {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px; /* Uniform size for Thank You text */
+  color: #333;
+}
+
+#thank-you-message h2 {
+  font-size: 24px; /* Larger font for title */
+  color: #396e94;
+  margin-bottom: 15px;
+}
